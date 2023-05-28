@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<script src="js/jquery-3.6.4.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("input").focus(function(){
+        $(this).css("background-color","#ff0000");
+    });
+
+    $("input").blur(function(){
+        $(this).css("background-color","#00ff00");
+    });
+}
+)
+
+</script>
+</head>
+<body>
+
+    <form name="form1" action="doc02.html" method="post" >
+        Nombre: <input type="text" name="nombre" id="nombre" value="" maxlength="35" minlength="2"/><br />
+        Apellidos: <input type="text" name="apellidos" id="apellido" value="" /><br />
+        Correo: <input type="email" name="correo" id="correo"  value="" /><br />
+        Telefono: <input type="tel" name="telefono" id="telefono" /><br />
+        Edad: <input type="number" name="edad" id="edad" max="100" min="0"/><br />
+        <input type="submit" value="Enviar" />
+    </form>
+
+</body>
+</html>

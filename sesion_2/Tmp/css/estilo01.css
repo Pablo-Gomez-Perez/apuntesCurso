@@ -1,0 +1,28 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;   
+}
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: grey;
+}
+
+tr:hover{
+    background-color: rgba(100, 148, 237, 0.597);
+}

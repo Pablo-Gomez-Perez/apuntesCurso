@@ -1,0 +1,22 @@
+
+footer{
+    background-color: black;
+    color: aliceblue;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    
+}
+
+th{
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+td{
+    text-align: left;
+    padding: 8px;
+    
+}

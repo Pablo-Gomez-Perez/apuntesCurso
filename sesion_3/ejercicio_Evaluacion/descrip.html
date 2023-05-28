@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Descripción</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="barra_secundaria" class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#"><img id="logocjava" src="images/logo.png" alt="logoCJava"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul id="barraDeMenu" class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="principal.html" aria-current="page">Inicio <span
+                            class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Productos</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Gamers</a>
+                        <a class="dropdown-item" href="#">PC's y laptops</a>
+                        <a class="dropdown-item" href="#">Oficina</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="descrip.html">Info</a>
+                </li>
+            </ul>
+            <form id="frBuscarProd" class="d-flex my-2 my-lg-0">
+                <label id="lblBuscar" for="txtBuscar">Qué estas buscando</label>
+                <input id="txtBuscar" class="form-control me-sm-2" type="text" placeholder="Search" name="txtBuscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul id="totalesCompra" class="navbar-nav me-2 mt-lg-0">
+                <li class="nav-item">
+                    <img id="carritoCompra" src="images/116356.png" alt="carritoCompra">
+                </li>
+                <li class="nav-item">
+                    <h7 id="numTotales">$ 000,000.00</h7>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Quienes somos</h1>
+                <p>Nuestra empresa se dedica a la venta de equipos de cómputo de alta calidad y última generación.
+                    Ofrecemos una amplia gama de productos, desde computadoras portátiles y de escritorio hasta
+                    periféricos y accesorios, todo con la garantía de calidad y servicio al cliente que nos distingue.
+                    Además, contamos con un equipo de expertos en tecnología que estarán siempre dispuestos a ayudarte y
+                    asesorarte en la elección de tus equipos y en la resolución de cualquier problema técnico que puedas
+                    presentar. ¡Visítanos y comprueba por qué somos la mejor opción en equipo de cómputo!</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/logo.jpg" class="img-fluid" alt="Imagen de la empresa">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <br>
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>© 2023 Todos los derechos reservados.</p>
+            <a href="creador.html">sobre el creador</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

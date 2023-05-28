@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Compusoft</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container-fluid justify-content-center text-center bg-primary text-light">
+            <h8>Envíos gratis a toda la republica despues de $500.00 solo por tiempo limitado</h8>
+        </div>
+    </nav>
+
+    <nav id="barra_secundaria" class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#"><img id="logocjava" src="images/logo.png" alt="logoCJava"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul id="barraDeMenu" class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="principal.html" aria-current="page">Inicio <span
+                            class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Productos</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="principal.html#gamming">Gamers</a>
+                        <a class="dropdown-item" href="principal.html#pcs">PC's y laptops</a>
+                        <a class="dropdown-item" href="principal.html#ofis">Oficina</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="descrip.html">Info</a>
+                </li>
+            </ul>
+            <form id="frBuscarProd" class="d-flex my-2 my-lg-0">
+                <label id="lblBuscar" for="txtBuscar">Qué estas buscando</label>
+                <input id="txtBuscar" class="form-control me-sm-2" type="text" placeholder="Search" name="txtBuscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul id="totalesCompra" class="navbar-nav me-2 mt-lg-0">
+                <li class="nav-item">
+                    <img id="carritoCompra" src="images/116356.png" alt="carritoCompra">
+                </li>
+                <li class="nav-item">
+                    <h7 id="numTotales">$ 000,000.00</h7>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <!--carrusel de imagenes-->
+        <article id="carruselSup">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="caruserlImage" src="images/Banner-hqbeds-computador.png" alt="banner_1"
+                            class="d-block">
+                        <div class="carousel-caption">
+                            <h3>Compu Soft</h3>
+                            <p>Lo mejor en computación</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img id="caruserlImage" src="images/computo (1).jpg" alt="banner_2" class="d-block">
+                        <div class="carousel-caption">
+                            <h3>Compu Soft</h3>
+                            <p>Excelentes precios</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img id="caruserlImage" src="images/computo.jpg" alt="banner_3" class="d-block">
+                        <div class="carousel-caption">
+                            <h3>Compu Soft</h3>
+                            <p>Solo la mejor calidad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </article>
+        <br>
+        <article>
+            <div id="rowNuevo" class="row align-content-start mt-2 g-2">
+                <div class="col-lg-8">
+                    <h3 id="lblNuevo">Lo mas nuevo</h3>
+                </div>
+                <div class="col-lg-2">
+                    <h6 id="linkTodo"><a href="#">ver todo</a></h6>
+                </div>
+            </div>
+            <div id="productosNuevos" class="row justify-content-center align-items-center g-2">
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/nuevo_1.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">ThinkCentre M75 SFF (AMD)</h4>
+                            <p class="card-text">- Formato pequeño, gran rendimiento - Lenovo Belize</p>
+                            <a href="#" class="btn btn-warning">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/nuevo_2.jpeg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Computadora Lenovo ThinkCentre M900</h4>
+                            <p class="card-text">- Intel Core - i5-6400t - 4GB - 500GB - Windows 10</p>
+                            <a href="#" class="btn btn-warning">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/nuevo_3.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Multifuncional Epson L4150</h4>
+                            <p class="card-text">a precio especial por nueva entrada - excelente relacion calidad precio</p>
+                            <a href="#" class="btn btn-warning">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/nuevo_4.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Tarjeta de Video NVIDIA Quadro</h4>
+                            <p class="card-text"> T1000 4GB GDDR6 / PNY / DP Mini / VCNT1000-PB / 3 AÑOS DE GARANTÍA al comprar en mostrador</p>
+                            <a href="#" class="btn btn-warning">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <br>
+        <article>
+            <div class="row-cols-5 justify-content-center align-items-center gx-1 d-flex">
+                <div id="promoMensaje" class="col-sm-3 flex-row-reverse">
+                    <div id="lb_1" class="container">
+                        <p>En promoción</p>
+                    </div>
+                    <div id="lb_2" class="container">
+                        <p>por tiempo limitado</p>
+                    </div>
+                    <div id="lb_3" class="container">
+                        <p>-50%</p>
+                    </div>
+                </div>
+
+                <div id="bannerPromo" class="col-sm-7">
+                    <img src="images/banner_msi.jpg" alt="banner_promo" width="1000px" height="400px">
+                </div>
+            </div>
+        </article>
+        <br>
+        <article>
+            <div id="rowNuevo" class="row align-content-start mt-2 g-2">
+                <div class="col-lg-8">
+                    <h3 id="lblNuevo"> <a name="gamming">Gaming</a></h3>
+                </div>
+                <div class="col-lg-2">
+                    <h6 id="linkTodo"><a href="#">ver todo</a></h6>
+                </div>
+            </div>
+            <div id="productosNuevos" class="row justify-content-center align-items-center g-2">
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gamming1.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Asus TUF Gaming Laptop, 15.6"</h4>
+                            <p class="card-text">144Hz Full HD IPS, AMD Ryzen 7 3750H, GeForce GTX 1650, 8GB DDR4, 512GB PCIe SSD, Gigabit Wi-Fi 5, Windows 10 Home, FX505DT-ES73</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gamming2.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Acer Nitro 5 15.6 pulgadas FHD 144Hz</h4>
+                            <p class="card-text">Gaming Notebook, procesador Intel Core i7-11800H, NVIDIA GeForce RTX 3050 Ti, 4 puertos, Wi-Fi asesino, teclado retroiluminado, HDMI, cámara web, Win 11 Home (32GB RAM | 1TB SSD)</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gamming3.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">HP Victus Gaming Desktop</h4>
+                            <p class="card-text">procesador AMD Ryzen 7-5700G, Radeon RX 6600XT 8GB Graphics (supera a RTX 3060), 32GB RAM, SSD PCIe de 2TB, Wi-Fi 6, HDMI, DisplayPort 3X, Win11</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gamming4.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">HP Laptop Victus Gaming</h4>
+                            <p class="card-text">15-fb0028nr 15.6 "Ryzen 7 16GB 512GB Negro Experimenta el rendimiento y las capacidades de nivel deputadora con un procesador móvil D Ryzen 7 5800H (1) y 16 GB de memoria DDR4.</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="rowNuevo" class="row align-content-start mt-2 g-2">
+                <div class="col-lg-8">
+                    <h3 id="lblNuevo"><a name="pcs">PC's y laptops</a></h3>
+                </div>
+                <div class="col-lg-2">
+                    <h6 id="linkTodo"><a href="#">ver todo</a></h6>
+                </div>
+            </div>
+            <div id="productosNuevos" class="row justify-content-center align-items-center g-2">
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/pc_1.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Lenovo ThinkCentre M900 SFF</h4>
+                            <p class="card-text">Desktop Computer, Intel Quad Core i5-6500T, 16GB DDR4 RAM, 512GB SSD, 4K 2-Monitor Support DisplayPort, Bluetooth, AC Wi-Fi, VGA, HDMI</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/pc_2.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">HP 8300 Elite Small Form Factor Desktop Computer</h4>
+                            <p class="card-text">Intel Core i5-3470 3.2GHz Quad-Core, 8GB RAM, 500GB SATA, Windows 10 Pro 64-Bit, USB 3.0, Display Port (Reacondicionado)</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/pc_3.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Dell OptiPlex 7050 Factor de Forma pequeño</h4>
+                            <p class="card-text">Intel Quad Core i5-6500 hasta 3.6GHz, 16G DDR4, 256G SSD, WIFI, DP, HDMI, 4K Support, Windows 10 Pro 64-Multi-Language Support</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/pc_4.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Laptop Lenovo 14" HD</h4>
+                            <p class="card-text">Pentium N5030, 4GB RAM, 128GB eMMC Windows 11 Home, Cloud Grey Pantalla 14" HD resolución 1366p x 768p, antireflejo</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="rowNuevo" class="row align-content-start mt-2 g-2">
+                <div class="col-lg-8">
+                    <h3 id="lblNuevo"><a name="ofis">De oficina</a></h3>
+                </div>
+                <div class="col-lg-2">
+                    <h6 id="linkTodo"><a href="#">Ver todo</a></h6>
+                </div>
+            </div>
+            <div id="productosNuevos" class="row justify-content-center align-items-center g-2">
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ofi_1.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Mochila para Laptop Antirrobo</h4>
+                            <p class="card-text">Gran Capacidad 15.6 Pulgadas, Mochila Impermeable de Viaje Casual Business, Mochila para Trabajo con USB Puerto, Mochila para Portátil</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ofi_2.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Brother HL1212W</h4>
+                            <p class="card-text">mpresora láser monocromática con conectividad en red inalámbrica, Negro/Gris Saca el máximo partido imprimiendo desde dispositivos móviles con la aplicación gratuita Brother iPrint&Scan.</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ofi_3.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">Brother DCP-L2540DW Impresora Multifuncional Laser</h4>
+                            <p class="card-text">Diseñado por expertos para brindar una mejor experiencia Rápida impresión y escaneado de alta calidad hasta 30 ppm Impresión dúplex automática</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cardProductosNuevos" class="col-sm-2">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ofi_4.jpg" alt="Card image" width="100px"
+                            height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">GHIA Monitor 21.5" Pulgadas MG2221</h4>
+                            <p class="card-text">LED, Panel VA, Resolución Full HD 1920 x 1080, 75 Hz MAX, 4 ms de Tiempo de Respuesta, Conexiones HDMI y VGA</p>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div id="precioArticulos" class="col">$00,000.00</div>
+                                <div class="col"><a href="#" class="btn btn-warning">Agregar</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <br>
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>© 2023 Todos los derechos reservados.</p>
+            <a href="creador.html">sobre el creador</a>
+        </div>
+    </footer>
+    <!------------------------------------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

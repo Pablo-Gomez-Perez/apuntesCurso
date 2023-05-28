@@ -1,0 +1,36 @@
+header{
+    background-color: red;
+    color: aliceblue;
+    border: 1px solid rgb(255, 3, 3);
+    text-align: center;
+
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li{
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 5em;
+}
+
+table,th,td{
+    border: 1px solid rgb(11, 45, 237);
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+footer{
+    background-color: brown;
+    border: 1px solid rgb(133, 87, 36);
+    text-align: center;
+    display: inline;
+    float: left;
+}

@@ -1,0 +1,124 @@
+#barra_secundaria {
+    background-color: #292a2b;
+}
+
+#frBuscarProd label,
+input {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#barraDeMenu {
+    width: 460px;
+    height: 70px;
+    color: #232323;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px 3px 3px 3px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    margin-inline: 10px;
+}
+
+#lblBuscar {
+    color: aliceblue;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#carritoCompra {
+    width: 43px;
+    height: 43px;
+}
+
+#numTotales {
+
+    width: 156px;
+    height: 27px;
+    color: #ff6624;
+    font-family: "ABeeZee";
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    white-space: nowrap;
+
+}
+
+#rowNuevo {
+    text-align: left;
+    .col-lg-2:first-child{
+        margin-right: 200px;
+    }
+}
+
+#rowProductosGaming {
+    text-align: left;
+    .col-lg-2:first-child{
+        margin-right: 200px;
+    }
+}
+
+#lblNuevo {
+    width: 180px;
+    height: 36px;
+    color: #000000;
+    font-family: "Allerta";
+    font-weight: bold;
+    font-size: 26px;
+    float: left;
+}
+
+#linkTodo {
+    float: right;
+}
+
+#caruserlImage {
+    width: 100%;
+    height: 80%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card{
+    width: 300px;
+}
+
+#cardProductosNuevos{
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+#promoMensaje{
+    font-weight: bold;
+}
+
+#lb_1{
+    font-size: 50px;
+}
+
+#lb_2{
+    font-size: 20px;
+}
+
+#lb_3{
+    font-size: 80px;
+}
+
+#precioArticulos{
+    color: #ff6624;
+    font-family: "ABeeZee";
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#footerContainer{
+    height: 60px;
+    background-color: #232323;
+    color: aliceblue;
+    font-weight: bold;
+}

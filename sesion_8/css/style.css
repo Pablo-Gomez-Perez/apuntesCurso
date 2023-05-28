@@ -1,0 +1,37 @@
+#headerText {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0%;
+    padding-left: 0;
+    padding-top: 0;
+
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dd2525;
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #2d0303;
+}
+
+#encabezado_section{
+    color: chocolate;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#cards_productos{
+    /*margin-left: 10px;*/
+}

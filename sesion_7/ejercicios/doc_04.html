@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="ejercicio3.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>formulario alumnos</h1>
+    </header>
+    <section>
+        <article>
+            <form>
+                <label for="txtDni">DNI</label>
+                <input id="txtDni" type="text">
+                <br>
+                <label for="txtNombre">nombre</label>
+                <input id="txtNombre" type="text">
+                <br>
+                <label for="txtApellido">Apellido</label>
+                <input type="text" id="txtApellido">
+                <br>
+                <label for="txtNota1">Nota1</label>
+                <input type="number" id="txtNota1">
+                <label for="txtNota2">Nota2</label>
+                <input type="number" id="txtNota2">
+                <label for="txtNota3">Nota3</label>
+                <input type="number" id="txtNota3">
+                <label for="txtNota4">Nota4</label>
+                <input type="number" id="txtNota4">
+                <br>
+                <label for="txtDireccion">Direccion</label>
+                <input type="text" id="txtDireccion">
+                <br>
+                <label for="txtTelefono">Telefono</label>
+                <input type="number" id="txtTelefono">
+                <br>
+                <label for="txtCorreo">Correo</label>
+                <input type="text" id="txtCorreo">
+                <br>
+                <label for="txtIdCurso">id Curso</label>
+                <input type="text" id="txtIdCurso">
+                <label for="txtNombreCurso">Curso</label>
+                <input type="text" id="txtNombreCurso">
+                <label for="txtDuracion">duracion</label>
+                <input type="number" id="txtDuracion">
+                <br>
+                <button type="button" onclick="agregarCurso()">Agregar Curso</button>
+
+                <select name="cmbCurso" id="cmbCurso">
+                    
+                </select>
+
+                <button type="button" onclick="insertarDatos()">Insertar</button>
+
+                
+            </form>
+            <br>
+            <table id="tabla">
+                <thead>
+                    <th>dni</th>
+                    <th>nombre</th>
+                    <th>Apellido</th>
+                    <th>Nota1</th>
+                    <th>Nota2</th>
+                    <th>Nota3</th>
+                    <th>Nota4</th>
+                    <th>promedio</th>
+                    <th>Direccion</th>
+                    <th>correo</th>
+                    <th>telefono</th>
+                </thead>
+                <tbody id="tablaAlumno">
+                    
+                </tbody>
+            </table>
+        </article>
+    </section>
+</body> 
+</html>

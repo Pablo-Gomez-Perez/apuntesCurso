@@ -1,0 +1,5 @@
+/*
+convertir el objeto alumno del ejercicio en un objeto JSON y mostrarlo en consola.
+
+
+*/

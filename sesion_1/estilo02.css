@@ -1,0 +1,22 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    background-color: bisque;
+}
+
+.tabla1{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #5714ad;
+    font-size: 18px;
+    background-color: rgb(204, 240, 164);
+}
+.tabla2{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    background-color: bisque;
+}

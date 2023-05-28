@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/script06.js"></script>
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>JSON a javascript</h1>
+    </header>
+    <section>
+        <article>
+            <form id="formulario" name="formulario">
+                <label for="txtNombre">nombre</label>
+                <input id="txtNombre" id="txtNombre" type="text">
+                <br>
+                <label for="txtApellido">apellido</label>
+                <input id="txtApellido" name="txtApellido" type="text">
+                <br>
+                <label for="txtEdad">Edad</label>
+                <input id="txtEdad" name="txtEdad" type="text">
+                <br>
+                <a name="boton" id="boton" class="btn btn-primary" role="button" onclick="mostrarDatos()">agregar</a>
+                <br>
+                <table id="tablaPersona">
+                    <thead>
+                        <th>nombre</th>
+                        <th>apellido</th>
+                        <th>Edad</th>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        
+                    </tbody>
+                </table>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

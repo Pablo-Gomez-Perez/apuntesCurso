@@ -1,0 +1,54 @@
+<!--
+    generar un documento en html que contenga un formulario para ingresar los 
+    datos de una mascota.
+    que contenga los siguientes datos
+        -nombre [30 caracteres]
+        -nombre del dueño [30 caracteres]
+        -edad mascota [0-15 años]
+        -fecha de ultima vacuna[yyy-mm-dd]
+
+        todos los datos son oblicatorios menos la fecha de vacuna
+
+    color de fondo de las cajas de texto por defecto: blanco
+    enfocadas: amarillo
+    desenfocadas: blanco si pasó validación, si no rojo
+
+    se debe demostrar el porqué no se pasó la validación en un texto
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <h1>Mascotas</h1>
+    </head>
+    <section>
+        <form action="" method="post">
+            <label for="nombreMascota">Nombre mascota</label>
+            <input id="nombreMascota" name="nombreMascota" type="text" value="" maxlength="30" onfocus="onFocusTxf('nombreMascota')" onblur="validarTxf('nombreMascota')">
+
+            <label for="nombreDueño">Nombre del dueño</label>
+            <input id="nombreDueño" name="nombreDueño" type="text" value="" maxlength="30" onfocus="onFocusTxf('nombreDueño')" onblur="validarTxf('nombreDueño')"> <br> <br>
+
+            <label for="edadMascota">Edad mascota</label>
+            <input id="edadMascota" name="edadMascota" type="number" value="" onfocus="onFocusTxf('edadMascota')" onblur="validarTxf('edadMascota')">
+
+            <label for="fechaVacuna">Fecha de vacunacion</label>
+            <input id="fechaVacuna" name="fechaVacuna" type="date" value="" onfocus="onFocusTxf('fechaVacuna')" onblur="validarTxf('fechaVacuna')"> <br> <br>
+
+            <button type="submit" onclick="validar()">
+                <img src="img/enviar.png" alt="iconoEnviar" width="20px" height="20px">
+                enviar info
+            </button>
+        </form>
+        <h2 id="salida">validacion: </h2>
+    </section>
+</body>
+</html>

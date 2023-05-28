@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Formularios con JavaScript</title>
+        <script type="text/javascript" src="js/script01.js"> </script>
+
+</head>
+
+<body>
+        <h1>Datos del alumno</h1>
+        <form name="form1" action="doc02.html" method="post" onsubmit="return validar()">
+                Nombre: <input type="text" name="nombre" id="nombre" value="" maxlength="35" minlength="2"
+                        onblur="f02(this)" onfocus="f01(this)" /><br />
+                Apellidos: <input type="text" name="apellidos" id="apellido" value="" onblur="f02(this)"
+                        onfocus="f01(this)" /><br />
+                Correo: <input type="email" name="correo" id="correo" value="" onblur="f02(this)"
+                        onfocus="f01(this)" /><br />
+                Telefono: <input type="tel" name="telefono" id="telefono" onblur="f02(this)"
+                        onfocus="f01(this)" /><br />
+                Edad: <input type="number" name="edad" id="edad" max="100" min="0" onblur="f02(this)"
+                        onfocus="f01(this)" /><br />
+                Lenguaje de programación favorito:
+                <select id="lenguaje" name="lenguaje" onchange="agregarTexto(this);">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Java</option>
+                        <option value="2">C#</option>
+                        <option value="3">PHP</option>
+                        <option value="4">JavaScript</option>
+                        <option value="5">Python</option>
+                </select><br />
+                <label id="lenguajeError" style="color: red; display: none;">"Seleccione un lenguaje"</label><br />
+                <label id="lblLenguaje" style="color: blue;">lenguaje seleccionado: </label><br />
+                <br />
+
+                <input type="checkbox" name="acepto" id="acepto" value="1" /> Acepto las condiciones<br />
+                <input type="radio" name="sexo" id="sexo" value="1" /> Hombre<br />
+                <input type="radio" name="sexo" id="sexo" value="2" /> Mujer<br />
+                <input type="radio" name="sexo" id="sexo" value="3" /> Otro<br />
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br />
+
+                <input type="submit" value="Enviar" />
+        </form>
+
+</body>
+
+</html>

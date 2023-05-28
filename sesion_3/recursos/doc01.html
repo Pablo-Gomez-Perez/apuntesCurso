@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>sesion 03</title>
+    <link rel="stylesheet" type="text/css" href="css/micss.css">
+</head>
+<body>
+    <h1>Datos del alumno</h1>
+    <p>Ingrese los datos de la ficha de matricula</p>
+
+    <form>
+        <label id="lblCodigo" for="txtCodigo">Codigo:</label> 
+        <input id="txtCodigo" type="text" name="codigo" value=""/><br>
+
+        <label for="txtNombre">Nombre:</label>
+        <input id="txtNombre" type="text" name="nombre" value=""/><br>
+
+        apellido: <input type="text" name="apellido" value=""/><br>
+
+        <label id="lblEdad" for="txtEdad">Edad:</label>
+        <input id="txtEdad" type="number" name="edad" value="0" /><br>
+
+        sexo: <input type="radio" name="sexo" value="M" checked/>Masculino
+        <input type="radio" name="sexo" value="F"/>Femenino
+        <br>
+
+        pasatiempo: <input type="checkbox" name="pasatiempo" value="leer"/>leer
+        <input type="checkbox" name="chkPasatiempo" value="dormir"/>dormir
+        <input type="checkbox" name="chkPasatiempo" value="jugar"/>jugar
+        <input type="checkbox" name="chkPasatiempo" value="comer"/>comer
+        <input type="checkbox" name="chkPasatiempo" value="correr"/>correr
+        <input type="checkbox" name="chkPasatiempo" value="nadar"/>nadar
+        <input type="checkbox" name="chkPasatiempo" value="dibujar"/>dibujar
+        <input type="checkbox" name="chkPasatiempo" value="cantar"/>cantar
+        <br>
+        color de ojos:
+        <input type="color" name="colorOjos" value="#000000"/><br>
+
+
+        pais:
+        <select name="slcPais" size="3">
+            <option value="peru">Peru</option>
+            <option value="chile">Chile</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="colombia">Colombia</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="paraguay">Paraguay</option>
+            <option value="mexico">Mexico</option>
+            <option value="guatemala">Guatemala</option>
+            <option value="honduras">Honduras</option>
+            <option value="el salvador">El Salvador</option>
+            <option value="nicaragua">Nicaragua</option>
+            <option value="costa rica">Costa Rica</option>
+            <option value="panama">Panama</option>
+            <option value="puerto rico">Puerto Rico</option>
+            <option value="dominica">Dominica</option>
+            <option value="republica dominicana">Republica Dominicana</option>
+            <option value="cuba">Cuba</option>
+            <option value="haiti">Haiti</option>
+            <option value="jamaica">Jamaica</option>
+            <option value="belice">Belice</option>
+            <option value="antigua y barbuda">Antigua y Barbuda</option>
+            <option value="saint kitts y nevis">Saint Kitts y Nevis</option>
+            <option value="saint lucia">Saint Lucia</option>
+            <option value="saint vincent y las granadinas">Saint Vincent y las Granadinas</option>
+            <option value="granada">Granada</option>
+            <option value="barbados">Barbados</option>
+            <option value="trinidad y tobago">Trinidad y Tobago</option>
+            <option value="suriname">Suriname</option>
+            <option value="guyana">Guyana</option>
+            <option value="french guiana">French Guiana</option>
+
+        </select><br>
+
+
+        direccion: <input type="text" name="direccion" value=""/><br>
+
+        telefono: <input type="number" name="telefono" value=""/><br>
+
+        email: <input type="email" name="email" value=""/><br>
+
+        fecha de nacimiento: <input type="date" name="fechaNacimiento" value=""/><br>
+        
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <!--este es un boton de submint, para enviar datos es distinto de un button-->
+        <input type="submit" value="enviar"/>
+
+    </form>
+
+
+</body>
+
+</html>
