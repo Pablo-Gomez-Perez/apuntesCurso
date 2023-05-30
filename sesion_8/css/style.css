@@ -8,6 +8,10 @@
 
 }
 
+#imagenClienteIcono {
+    filter: brightness(120%) sepia(100%) hue-rotate(30deg);
+}
+
 .nav-link {
     color: black;
     font-weight: bold;
@@ -26,12 +30,54 @@
     background-color: #2d0303;
 }
 
-#encabezado_section{
+#encabezado_section {
     color: chocolate;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#cards_productos{
-    /*margin-left: 10px;*/
+.footer_page {
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(111, 17, 17);
+
+
+}
+
+.footer_links,
+.faq-list,
+.contact-container,
+.legal-container {
+    color: darkgray;
+    margin-top: 2px;
+    font-size: small;
+}
+
+span {
+    display: inline-block;
+
+}
+
+#nosotros {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.info-section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    color: #666;
+    line-height: 1.5;
 }

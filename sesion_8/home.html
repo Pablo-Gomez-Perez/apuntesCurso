@@ -27,10 +27,10 @@
                 <div class="collapse navbar-collapse navbar-dark" id="barraMenu">
                     <ul class="navbar-nav me-auto text-black">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="about_us.html">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Perros</a>
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Perros</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Alimento</a></li>
                                 <li><a class="dropdown-item" href="#">Medicamentos</a></li>
@@ -42,7 +42,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gatos</a>
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Gatos</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Arena</a></li>
                                 <li><a class="dropdown-item" href="#">Alimento</a></li>
@@ -75,6 +75,15 @@
                         <input class="form-control me-2" type="text" placeholder="Search"></input>
                         <button class="btn btn-primary" type="button">Buscar</button>
                     </form>
+                    <div class="nav-item m-2">
+                        <div class="nav-link">
+                            <img class="rounded-circle" src="images/nvo_cliente_icon.png" alt="imagenClienteIcono"
+                                width="40px" height="40p">
+                        </div>
+                    </div>
+                    <div class="nav-item m-1">
+                        <a class="nav-link" href="new_client.html">Agregarme</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -113,81 +122,342 @@
     </header>
     <section>
         <article class="section-row-1 m-4 p-4">
-            <div class="row justify-content-center align-items-center g-2">
-                <div class="col-sm-10">
-                    <h1 id="encabezado_section">Snaks & Alimentos</h1>
-                </div>
-                <div class="col-sm-2">
-                    <a id="btn_ver" class="btn btn-danger" role="button">ver todo</a>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center m-4 g-2">
-                <div class="col-sm-5">
-                    <img class="img-thumbnail" src="images/comida_1.webp" alt="comida_1" height="80%" width="80%">
-                    <div class="row justify-content-center align-items-center g-2">
-                        <div class="col justify-content-center text-center d-flex">
-                            <a id="btn_ver" class="btn btn-secondary" role="button">Consultar oferta</a>
-                            <a id="btn_ver" class="btn btn-primary mx-sm-4" role="button">agregar</a>
-                        </div>
+            <div class="container">
+                <div class="d-flex flex-row justify-content-between align-items-center g-2">
+                    <div class="flex-column">
+                        <h1 id="encabezado_section">Snaks & Alimentos</h1>
+                    </div>
+                    <div class="flex-column">
+                        <a id="btn_ver" class="btn btn-danger" role="button">ver todo</a>
                     </div>
                 </div>
-                <div class="col-sm-5">
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center m-4 g-2">
+                <div class="d-flex flex-column align-items-center">
+                    <img class="img-thumbnail" src="images/comida_1.webp" alt="comida_1" height="80%" width="80%">
+                    <div class="flex-row justify-content-between g-2 mt-2">
+                        <a id="btn_ver" class="btn btn-secondary" role="button">Consultar oferta</a>
+                        <a id="btn_ver" class="btn btn-primary mx-sm-4" role="button">agregar</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-center">
                     <img class="img-thumbnail" src="images/comida_2.jpg" alt="comida_2" height="80%" width="80%">
-                    <div class="col justify-content-center text-center d-flex">
+                    <div class="flex-row justify-content-between g-2 mt-2">
                         <a id="btn_ver" class="btn btn-secondary" role="button">Consultar oferta</a>
                         <a id="btn_ver" class="btn btn-primary mx-sm-4" role="button">agregar</a>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-sm-center m-2 g-2">
-                <div id="cards_productos" class="col-sm-3">
-                    <div class="card" style="width:250px">
-                        <img class="card-img-top" src="images/comida_4.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Pavo Whiskas 85.0</h4>
-                            <p class="card-text">Comida Gato Pavo Whiskas completo para todas razas de todas las edades.</p>
-                            <a class="btn btn-warning">Agregar</a>
+            <div class="container">
+                <div class="d-flex flex-row justify-content-center align-items-start m-2 g-2">
+                    <div id="cards_productos" class="flex-column p-3" onmouseover="">
+                        <div class="card" style="width:250px">
+                            <img class="card-img-top" src="images/comida_4.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Pavo Whiskas 85.0</h4>
+                                <p class="card-text">Comida Gato Pavo Whiskas completo para todas razas de todas las
+                                    edades.</p>
+                                <a class="btn btn-warning">Agregar</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="cards_productos" class="col-sm-3">
-                    <div class="card" style="width:250px">
-                        <img class="card-img-top" src="images/comida_3.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Dog Power 24.0 - Kg</h4>
-                            <p class="card-text">Dog Power Receta Mejorada, es un alimento 100% balanceado y completo para todas razas de todas las edades.</p>
-                            <a class="btn btn-warning">Agregar</a>
+                    <div id="cards_productos" class="flex-column p-3">
+                        <div class="card" style="width:250px">
+                            <img class="card-img-top" src="images/comida_3.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Dog Power 24.0 - Kg</h4>
+                                <p class="card-text">Dog Power Receta Mejorada, es un alimento 100% balanceado y
+                                    completo para todas razas de todas las edades.</p>
+                                <a class="btn btn-warning">Agregar</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="cards_productos" class="col-sm-3">
-                    <div class="card" style="width:250px">
-                        <img class="card-img-top" src="images/comida_5.webp" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Ganador 4.0 - Kg</h4>
-                            <p class="card-text">Ganador 4.0 - Kg Receta Mejorada, es un alimento 100% balanceado y completo para todas razas de todas las edades.</p>
-                            <a class="btn btn-warning">Agregar</a>
+                    <div id="cards_productos" class="flex-column p-3">
+                        <div class="card" style="width:250px">
+                            <img class="card-img-top" src="images/comida_5.webp" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Ganador 4.0 - Kg</h4>
+                                <p class="card-text">Ganador 4.0 - Kg Receta Mejorada, es un alimento 100% balanceado y
+                                    completo para todas razas de todas las edades.</p>
+                                <a class="btn btn-warning">Agregar</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="cards_productos" class="col-sm-3">
-                    <div class="card" style="width:250px">
-                        <img class="card-img-top" src="images/comida_6.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Pedigree 7.0 - Kg</h4>
-                            <p class="card-text">Comida Perro Cachorro Pedigree 100% balanceado y completo para todas razas de todas las edades.</p>
-                            <a class="btn btn-warning">Agregar</a>
+                    <div id="cards_productos" class="flex-column p-3">
+                        <div class="card" style="width:250px">
+                            <img class="card-img-top" src="images/comida_6.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Pedigree 7.0 - Kg</h4>
+                                <p class="card-text">Comida Perro Cachorro Pedigree 100% balanceado y completo para
+                                    todas razas de todas las edades.</p>
+                                <a class="btn btn-warning">Agregar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-    </section>
-    <section>
-        
-    </section>
-    <footer>
+        <article class="section-row-2 m-4 p-4">
 
+            <div class="container">
+                <div class="d-flex flex-row justify-content-between align-items-center g-2">
+                    <div class="flex-column">
+                        <h1 id="encabezado_section">Vitaminas & Medicamentos</h1>
+                    </div>
+                    <div class="flex-column">
+                        <a id="btn_ver" class="btn btn-danger" role="button">ver todo</a>
+                    </div>
+                </div>
+            </div>
+            <div id="carruselMedicamentos" class="carousel slide m-4 p-4" data-bs-ride="carousel">
+                <!-- botones indicadores -->
+                <div class="carousel-indicators">
+                    <li data-bs-target="#carruselMedicamentos" data-bs-slide-to="0" class="rounded-circle active"></li>
+                    <li data-bs-target="#carruselMedicamentos" data-bs-slide-to="1" class="rounded-circle"></li>
+                    <li data-bs-target="#carruselMedicamentos" data-bs-slide-to="2" class="rounded-circle"></li>
+                    <li data-bs-target="#carruselMedicamentos" data-bs-slide-to="3" class="rounded-circle"></li>
+                </div>
+                <!--imagenes del carrusel-->
+                <div class="carousel-inner carouse">
+                    <div class="carousel-item active justify-content-center align-content-center">
+                        <div class="container">
+                            <div class="d-flex flex-row justify-content-center align-items-center">
+                                <div class="d-flex flex-column p-4">
+                                    <div class="card" style="width:250px">
+                                        <img class="card-img-top" src="images/medicamentos_2.webp" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">ALIN VETERINARIO 0.5 MG 30 TABLETAS </h4>
+                                            <p class="card-text">glucocorticoide compuesto de dexametasona de acción
+                                                inmediata, característica útil cuando se requiere una acción terapéutica
+                                                urgente.</p>
+                                            <a class="btn btn-warning">Agregar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column p-4">
+                                    <div class="card" style="width:250px">
+                                        <img class="card-img-top" src="images/medicamentos_3.webp" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">ALIN OFTÁLMICO GOTAS 10 ML PERROS Y GATOS</h4>
+                                            <p class="card-text">Antiinflamatorio, antipruriginoso, antialérgico y
+                                                antibacteriano para Caninos y Felinos</p>
+                                            <a class="btn btn-warning">Agregar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column p-4">
+                                    <div class="card" style="width:250px">
+                                        <img class="card-img-top" src="images/medicamentos_4.webp" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">AZODYL FRASCO CON 90 CÁPSULAS</h4>
+                                            <p class="card-text">Cápsulas orales con capa entérica Diálisis Entérica®
+                                                auxiliar en el control de la azotemia en pacientes con Insuficiencia
+                                                Renal Crónica (IRC)</p>
+                                            <a class="btn btn-warning">Agregar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container m-4 p-4">
+                            <div class="d-flex flex-row justify-content-center align-items-center m-4 p-4">
+                                <img src="images/banner_vitamina_gato.png" alt="imagen1" class="d-block w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container m-4 p-4">
+                            <div class="d-flex flex-row justify-content-center align-items-center m-4 p-4">
+                                <img src="images/medicamentos_8.png" alt="imagen2" class="d-block w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="d-flex flex-row justify-content-center align-items-center g-2">
+                                <div class="flex-column m-4">
+                                    <div class="card" style="width:250px">
+                                        <img class="card-img-top" src="images/medicamentos_5.webp" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">AVERDÁN FRASCO CON 500 ML</h4>
+                                            <p class="card-text">Antihelmíntico de amplio espectro eficaz contra
+                                                parásitos gastrointestinales y pulmonares. Elimina parásitos adultos,
+                                                larvas y huevecillos.</p>
+                                            <a class="btn btn-warning">Agregar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-column m-4">
+                                    <div class="card" style="width:250px">
+                                        <img class="card-img-top" src="images/medicamentos_6.webp" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">BRAVECTO CH 250 MG 4.5 - 10 KG</h4>
+                                            <p class="card-text">COMPRIMIDO MASTICABLE PARA CONTROL DE PULGAS Y
+                                                GARRAPATAS en los perros proporcionando 12 semanas de protección</p>
+                                            <a class="btn btn-warning">Agregar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-column m-4">
+                                    <div class="card" style="width:250px">
+                                        <img class="card-img-top" src="images/medicamentos_7.webp" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">RESPICHEM FM 100 ML</h4>
+                                            <p class="card-text">Mucolítico, expectorante,antihistamínico,
+                                                analgésico,antipirético y antiinflamatorio no esteroidal</p>
+                                            <a class="btn btn-warning">Agregar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--botones de izquierda a derecha-->
+                <button class="carousel-control-prev bg-gradient" type="button" data-bs-target="#carruselMedicamentos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-warning"></span>
+                </button>
+                <button class="carousel-control-next bg-gradient" type="button" data-bs-target="#carruselMedicamentos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-warning"></span>
+                </button>
+            </div>
+        </article>
+        <article class="section-row-3 m-4 p-4">
+            <div class="container">
+                <div class="d-flex flex-row justify-content-between align-items-center g-2">
+                    <div class="flex-column">
+                        <h1 id="encabezado_section">Juguetes & Herramientas</h1>
+                    </div>
+                    <div class="flex-column">
+                        <a id="btn_ver" class="btn btn-danger" role="button">ver todo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex flex-row justify-content-center align-items-start m-2 g-2">
+                    <div id="cards_productos" class="flex-column p-3" onmouseover="">
+                        <div class="card" style="width:250px">
+                            <img class="card-img-top" src="images/juguete_1.jpeg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Kong Pelota de Goma Squeezz</h4>
+                                <p class="card-text">La pelota de KONG Squeezz es un juguete para perros ideal para el
+                                    juego de buscar y recoger.</p>
+                                <a class="btn btn-warning">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cards_productos" class="flex-column p-3">
+                        <div class="card" style="width:250px">
+                            <img class="card-img-top" src="images/juguete_2.jpeg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Juguete de Látex Perrito</h4>
+                                <p class="card-text">El juguete para perros Látex Loofa está diseñado para cachorros y
+                                    perros pequeños y viene en una variedad de colores.</p>
+                                <a class="btn btn-warning">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cards_productos" class="flex-column p-3">
+                        <div class="card" style="width:250px">
+                            <img class="card-img-top" src="images/juguete_3.jpeg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Petco Frisbee de Colores, 22.8 cm</h4>
+                                <p class="card-text">Lanza a tu mascota algo de diversión con el durable disco de
+                                    plástico volador Petco. Proporciona mucho ejercicio y juego interactivo para ti y tu
+                                    perro</p>
+                                <a class="btn btn-warning">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cards_productos" class="flex-column p-3">
+                        <div class="card" style="width:250px">
+                            <img class="card-img-top" src="images/herramientas 1.webp" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Kit De Tijeras Estetica Canina Gato Perro</h4>
+                                <p class="card-text">La marca NOWAIT le promete propocionar producto de calidad y
+                                    soporte profesional, por favor comfirmelo antes de comprar.</p>
+                                <a class="btn btn-warning">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>    
+    <footer class="footer_page">
+        <div class="container-fluid">
+            <div class="d-flex flex-row justify-content-between align-items-start">
+                <div class="flex-column m-2 p-2">
+                    <h4>Nosotros</h4>
+                    <!-- Hover added -->
+                    <div class="list-group">
+                        <a class="footer_links" href="about_us.html">Quienes somos</a>
+                        <a class="footer_links" href="about_us.html">Qué hacemos</a>
+                        <a class="footer_links" href="about_us.html">Marco legal</a>
+                    </div>
+                </div>
+                <div class="flex-column m-2 p-2">
+                    <div class="faq-container">
+                        <h4>FAQ</h4>
+                        <dl class="faq-list">
+                            <td>¿cual es la politica de envío?</td>
+                            <dd>ver respuesta</dd>
+                            <td>¿Aceptan devoluciones?</td>
+                            <dd>ver respuesta</dd>
+                            <td>¿Qué métodos de pago manejan?</td>
+                            <dd>ver respuesta</dd>
+                            <td>¿Cómo contacto a serv. al cliente?</td>
+                            <dd>ver respuesta</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="flex-column m-2 p-2">
+                    <div class="contact-container">
+                        <h4>Contacto</h4>
+                        <div class="list-group">
+                            <dl>
+                                <td>Telefonos</td>
+                                <dd>961-XXX-XXXX</dd>
+                                <dd>961-XXX-XXXX</dd>
+                                <dd>961-XXX-XXXX</dd>
+                            </dl>
+                        </div>
+                        <div class="list-group">
+                            <dl>
+                                <td>Correo</td>
+                                <dd>info@pethhappy.com</dd>
+                                <dd>ventas@pethhappy.com</dd>
+                                <dd>contacto@pethhappy.com</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-column m-2 p-2">
+                    <div class="legal-container">
+                        <h4>Información Legal</h4>
+                        <div class="list-group">
+                            <dl>
+                                <dd>Terminos y condiciones</dd>
+                                <dd>Politica de privasidad</dd>
+                                <dd>aviso legal</dd>
+                                <dd>Politica de cookies</dd>
+                                <dd>Derechos de autor</dd>
+                                <dd>Politica de envío y entrega</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center text-center">
+                <div class="d-flex flex-column mb-3">
+                    <a class="footer_links" href="about_dev.html">Sobre el desarrollador</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!--scripts libraries-->
