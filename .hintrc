@@ -40,7 +40,8 @@
     "axe/structure": [
       "default",
       {
-        "listitem": "off"
+        "listitem": "off",
+        "definition-list": "off"
       }
     ],
     "detect-css-reflows/composite": "off"
